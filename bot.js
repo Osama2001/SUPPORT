@@ -233,10 +233,6 @@ if(!message.channel.guild) return message.channel.send('**هذا الأمر فق
    let a8tra7 = message.content.split(' ').slice(1).join(' ')
    var m8tr7 = message.author.id
 if(!message.guild.channels.find("name","『suggestions』")) return message.channel.send('انشء روم باسم   \`『suggestions』 \`')
-var Eror = new Discord.RichEmbed()
-   .setTimestamp()
-   .setDescription(`الرجاء كتابت إقتراحك بعد الأمر `)
-   if(!a8tra7.join(" ")) return message.channel.send(Eror).then(message => {message.delete(50000)});
    var ThxForSug = new Discord.RichEmbed()
    .setTitle(`:white_check_mark: Success!`)
    .setTimestamp()
