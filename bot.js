@@ -527,7 +527,7 @@ coll.first().delete()
     })
     setTimeout(() => {
       c.delete()
-      message.channel.send("تم انقضاء الوقت الكامل لا اعده التجديد اسنخدم امر $tC")
+      message.channel.send("تم انقضاء الوقت الكامل لا اعده التجديد اسنخدم امر -cc")
     }, Math.floor(time*60000))
     var  chna = message.guild.channels.find("name", "log")
     const embed = new Discord.RichEmbed()
