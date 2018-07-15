@@ -232,7 +232,7 @@ if(!message.channel.guild) return message.channel.send('**هذا الأمر فق
       if(!message.channel.guild) return message.reply(`هذا الأمر فقط ل السيرفرات :x:`);
    let a8tra7 = message.content.split(' ').slice(1).join(' ')
    var m8tr7 = message.author.id
-if(!message.guild.channels.find("name","『suggestions』")) return message.channel.send('انشء روم باسم   \`『suggestions』\`')
+if(!message.guild.channels.find("name","『suggestions』")) return message.channel.send('انشء روم باسم   \`『suggestions』 \`')
 var Eror = new Discord.RichEmbed()
    .setTimestamp()
    .setDescription(`الرجاء كتابت إقتراحك بعد الأمر `)
