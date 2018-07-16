@@ -542,6 +542,19 @@ coll.first().delete()
   }
 })
    
+
+
+
+  client.on('typingStart', (ch, user) => {
+    if(user.presence.status === 'offline') {
+        
+        ch.send(`${user} هاهاهاا , كشفتك وانت تكتب ي اوف لاين`)
+        .then(msg => {
+            msg.delete(10000)
+        })
+    }
+})
+
    
    
    client.login(process.env.BOT_TOKEN);
